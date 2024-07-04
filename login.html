@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>CEPAC-LOGIN</title>
+    <link rel="stylesheet" href="css/indix.css">
+    <link rel="stylesheet" id="conteudo-principal-da-cepac" href="css/conteudo.css">
+    <link rel="stylesheet" id="conteudo-rodape" href="css/footer.css">
+    <link rel="stylesheet" id="conteudo-cadastramento" href="css/login.css">
+  </head>
+     <body>
+       <header>
+        <div id="cabeca">
+            <h4>contato@cepac.co.ao  /  (+244) 928 055 091</h4>
+            <h3>BEM-VINDO A CEPAC</h3>
+            <h4>EX-ALUNO  /  WEBMAIL</h4>
+        </div>
+        <!-- ------------------------------------------------------------->
+        <div id="menu-principais">
+          <a href="indix.html"><img class="logotipo" src="imagens/meu logo.jpg" alt="logotipo"></a>     
+          <h1>CEPAC</h1>
+          <h5>COMPLEXO ESCOLAR PRIVADO ALVARO CARDOSO</h5>     
+          <nav class="nav">
+            <ul>
+              <li><a href="indix.html">CEPAC</a></li>
+              <li><a href="Sobre.html">SOBRE NOS</a></li>  
+              <li><a href="#">BIBLIOTECA CEPAC</a></li> 
+              <li><a href="Galeria.html">GALERIA - ESCOLAR</a></li> 
+              <li><a href="#">CHAT</a></li> 
+              </ul>
+          </nav>
+        </div>
+       </header> 
+       <!-- ------------ Por favor não mexe esta parte , aqui inicia a parte princiapl do conteudo do site-->
+       <div id="page-content">
+          <div class="login-container">
+            <h2>Login</h2>
+            <form id="loginForm" onsubmit="return validateForm()">
+                <div class="form-group">
+                    <label for="username">Nome de Usuário:</label>
+                    <input type="text" id="username" name="username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <button type="submit">Entrar</button>
+                <div id="error-message"></div>
+            </form>
+        </div>
+    
+        <script>
+            function validateForm() {
+                var username = document.getElementById('username').value;
+                var password = document.getElementById('password').value;
+                var errorMessage = document.getElementById('error-message');
+    
+                if (username === "" || password === "") {
+                    errorMessage.textContent = "Por favor, preencha todos os campos.";
+                    return false;
+                }
+    
+                // Aqui você pode adicionar mais validações, como formato de email, comprimento mínimo da senha, etc.
+    
+                return true;
+            }
+          </script>
+        
+
+        </div>
+        
+       <footer>
+          <div id="conteudo-rodape">
+            <div>
+              <img class="logotipo" src="imagens/meu logo.jpg" alt="logotipo">
+              <h1>CEPAC</h1>
+              <h5>COMPLEXO ESCOLAR PRIVADO ALVARO CARDOSO</h5>
+              <p>
+                  Entrar em contato <br> <br>
+                  (+244) 925 055 091 / 951 993 078  <br> <br>
+                  Avenida Pedro de Castro Van Dunem 24  <br> <br>
+                  CP. 2064, Luanda Angola
+              </p>
+              <div id="form">
+                 <input id="texto" type="tex" value="E-mail" />
+                 <input id="botao" type="button" value="Enviar" />
+              </div>
+              <h3> © 2024 CEPAC. Todos os direitos reservados.</h3>                     
+          </div>
+
+          <div>
+              <h3>CEPAC</h3>
+             <ul>
+                  <li id=""><a>Saudação do Magnifico Reitor</a></li> 
+                  <li><a>Identidade e Missão</a></li>
+                  <li><a>Historial</a></li>
+                  <li><a>Simbolos</a></li>
+                  <li><a>facebook</a></li>
+             </ul>  
+          
+          </div>
+          <div>
+              <h3>UNIDADE ORGÂNICA</h3>
+              <ul>
+                  <li><a>Saudação do Magnifico Reitor</a></li> 
+                  <li><a>Identidade e Missão</a></li>
+                  <li><a>Historial</a></li>
+                  <li><a>Simbolos</a></li>
+                  <li><a>Contacto</a></li>
+             </ul>  
+          </div>
+          <div>
+              <h3>CENTROS</h3>
+              <ul>
+                <li><a href="https://www.bing.com/maps?q=universidade+catolica+de+angola&FORM=HDRSC6&cp=-8.876656%7E13.253595&lvl=13.7" target="_blank">Mapa</a></li> 
+
+                  <li><a>Os Centros da CEPAC</a></li>
+                  <li><a>Historial</a></li>
+                  <li><a>Simbolos</a></li>
+                  <li><a>Contacto</a></li>
+             </ul>  
+          </div>
+          </div>
+       </footer>
+      </body>
+</html>
